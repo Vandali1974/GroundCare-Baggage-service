@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GroundCare Baggage Services</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #002b5c;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+.hero {
+    background-color: #004080;
+    color: white;
+    padding: 100px 40px;
+}
+.button {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    background-color: white;
+    color: #002b5c;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+footer {
+    background-color: #002b5c;
+    color: white;
+    padding: 20px;
+}
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+form button {
+    padding: 10px 20px;
+    background-color: #002b5c;
+    color: white;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div><strong>GroundCare Baggage Services</strong></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#missing">Vermist</a>
+        <a href="#damaged">Beschadigd</a>
+        <a href="#status">Status</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Problemen met uw bagage?</h1>
+    <p>Wij helpen u snel en professioneel verder.</p>
+    <a href="#status"><button class="button">Status controleren</button></a>
+    <a href="#contact"><button class="button">Claim indienen</button></a>
+</section>
+
+<section id="missing">
+    <h2>Vermiste Bagage</h2>
+    <div class="card">
+        <p>Heeft u uw bagage niet ontvangen? Controleer eerst of u een PIR-nummer heeft ontvangen op de luchthaven.</p>
+        <p>Met uw PIR-nummer kunt u de status controleren via onderstaande optie.</p>
+    </div>
+</section>
+
+<section id="damaged">
+    <h2>Beschadigde Bagage</h2>
+    <div class="card">
+        <p>Is uw bagage beschadigd aangekomen? Meld dit binnen 7 dagen na aankomst.</p>
+        <p>Wij nemen binnen 5 werkdagen contact met u op.</p>
+    </div>
+</section>
+
+<section id="status">
+    <h2>Status Controle</h2>
+    <div class="card">
+        <form>
+            <input type="text" placeholder="PIR-nummer">
+            <input type="text" placeholder="Achternaam">
+            <button type="submit">Controleer status</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact & Claim</h2>
+    <div class="card">
+        <form>
+            <input type="text" placeholder="Naam">
+            <input type="email" placeholder="E-mailadres">
+            <textarea rows="4" placeholder="Uw bericht"></textarea>
+            <button type="submit">Versturen</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 GroundCare Baggage Services | Privacybeleid
+</footer>
+
+</body>
+</html>
